@@ -67,11 +67,25 @@ class Electrodomestico {
 }
 
 
-let microondas = new Electrodomestico("Mircroondas Samsung", 20000, "gris", 60);
-console.log(microondas);
 
 // microondas.peso = 50;
 // microondas.precioBase = 20000;
 // microondas.color = "gris"
 // microondas.nombre = ;
 // microondas.consumoEnergetico = 50;
+
+//-----------------------------------------------------------------------------
+// Ejercicio clase Jueves 23 de febrero de 2023 - Entregable Obligatorio
+// A la clase Electrodomestico en la que venian trabajando, completarla con:
+// -Constructor que reciba los parametros necesarios para incializar 
+//  los atributos de la clase al momento de instanciarla
+// -Todos los metodos get y set
+// Crear diferentes instancias del electrodomestico, e interactuar con estas instancias
+// (Ejemplo: consultarle el valor de un atributo utilizando get y mostrarlo por consola)
+
+let microondas = new Electrodomestico("Mircroondas Samsung", 20000, "gris", 120);
+//console.log(microondas);
+let heladera = new Electrodomestico("Patich", 150000, "blanca", 20);
+
+console.log("El microondas " +(microondas.esDeBajoConsumo()?"si":"no")+" es de bajo consumo y su precio es "+microondas.getprecioBase());
+console.log("La heladera " +(heladera.esDeBajoConsumo()?"si":"no")+" es de bajo consumo y su precio es "+heladera.getprecioBase());
