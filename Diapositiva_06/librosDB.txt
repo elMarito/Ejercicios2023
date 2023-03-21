@@ -1,0 +1,5 @@
+Autor|Titulo|Tematica|Editorial
+Ray Bradbury|Cronicas marcianas|ciencia ficcion|Futura
+Eduardo Sacheri|La noche de la Usina|suspenso|Alfaguara
+Edgar Allan Poe|Corazon delator|terror|Darkside
+Quino|Mafalda|humor|EDICIONES DE LA FLOR
