@@ -1,0 +1,11 @@
+Ejercicio 5
+
+Implementar la clase RegistroAutomotor: similar al ejercicio de la clase pasada,
+pero incorporando los conceptos nuevos, y la clase LectorArchivos (opcional).
+Mandar por Slack el link al repositorio de GitHub
+
+
+HECHO. (parcialmente)
+Agregue las modificaciones en los archivos de la diapositiva_04
+pero aun no intente crea la clase LectorArchivos. intento ponerme al dia 
+con los ejercicios obligatorios.
