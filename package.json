@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@types/node": "^18.15.3",
+    "ascii-text-generator": "^1.0.5",
+    "beepbeep": "^1.3.0",
+    "readline-sync": "^1.4.10"
+  }
+}
