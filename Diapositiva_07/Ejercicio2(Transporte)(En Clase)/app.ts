@@ -6,8 +6,15 @@
 // Ojo con la forma de hacer los import
 // Subir las cosas a GitHub y avisar por Slack (opcional)
 //=============================================================================
-
-
-// work in progress
-
+import { Auto } from "./auto";
+import { Moto } from "./moto";
 //-----------------------------------------------------------------------------
+const miMoto: Moto = new Moto("df-111-dd", "chico", 300);
+const miAuto: Auto = new Auto("ab-564-er", "mediano", 700);
+
+miMoto.acelerar();
+miAuto.acelerar();
+miAuto.doblar(5,true )
+
+console.table(miMoto);
+console.table(miAuto);
