@@ -1,0 +1,32 @@
+@startuml
+'Hecho con https://www.planttext.com/ '
+skin rose
+
+title Mamiferos - Diagrama de Clases
+skinparam classAttributeIconSize 0
+class Mamifero {
+    - nombre: string;
+    - habitats: string[];
+    - cuadrupedo: boolean;
+    - volador: boolean;
+    # comidas: string[];
+    + getNombre(): string 
+    + setNombre(value: string): void
+    + getComidas(): string 
+    + desplazarse(): void 
+    + comer(): void 
+}
+
+class Carnivoro extends Mamifero {
+    # cazador: boolean;
+    + cazar(): void 
+}
+
+
+class Herviboro extends Mamifero {
+}
+
+class Omnivoro extends Carnivoro {
+    + cazar(): void 
+}
+@enduml

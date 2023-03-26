@@ -1,0 +1,26 @@
+@startuml
+'Hecho con https://www.planttext.com/ '
+skin rose
+
+title Autos - Diagrama de Clases
+skinparam classAttributeIconSize 0
+class Auto {
+    -marca: string;
+    -modelo: string;
+    #velocidadActual: number;
+
+    +constructor(marca: string, modelo: string) :void
+    +acelerar(): void
+ }
+
+
+class autoCarrera extends Auto {
+    + constructor(marca: string, modelo: string) :void
+    + acelerar(): void
+}
+ 
+class autoCiudad extends Auto {
+    + constructor(marca: string, modelo: string) :void
+    + acelerar(): void
+}
+@enduml

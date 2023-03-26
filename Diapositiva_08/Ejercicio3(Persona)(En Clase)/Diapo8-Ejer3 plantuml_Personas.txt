@@ -1,0 +1,31 @@
+@startuml
+'Hecho con https://www.planttext.com/ '
+skin rose
+
+title Personas - Diagrama de Clases
+skinparam classAttributeIconSize 0
+class Persona {
+    - nombre: string
+    - apellido: string
+    - numeroDePasaporte: string
+    - fechaDeNacimiento: date
+    # distanciaPasoMts: number
+    + caminar(): void
+    + correr(): void
+}
+
+class Adulto extends Persona {
+    + caminar(): void
+    + correr(): void
+}
+
+class Adolescente extends Persona {
+    + caminar(): void
+    + correr(): void
+}
+class Ni�o extends Persona {
+
+    + caminar(): void
+    + correr(): void
+}
+@enduml
