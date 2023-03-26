@@ -1,7 +1,6 @@
 import { Entrenador } from "./entrenador";
 import { Futbolista } from "./futbolista";
 import { Masajista } from "./masajista";
-import { Persona } from "./persona";
 //-----------------------------------------------------------------------------
 export class Seleccion {
     private pais: string;
@@ -9,30 +8,28 @@ export class Seleccion {
     private masajista: Masajista;
     private futbolistas: Futbolista[];
     //-------------------------------------------------------------------------
-    constructor(pais: string, entrenador: Entrenador, masajista?: Masajista, jugadores?: Futbolista[]) {
+    constructor(pais: string, entrenador: Entrenador, masajista?: Masajista, futbolistas?: Futbolista[]) {
         this.pais = pais;
         this.entrenador = entrenador;
-        if (masajista !== undefined) this.masajista = masajista;
-        // this.jugadores = numeroDePasaporte;
+        this.masajista = masajista as Masajista;
+        this.futbolistas = (futbolistas !== undefined) ? futbolistas : [];
     }
     //-------------------------------------------------------------------------
     public getPais(): string { return this.pais; }
     public setPais(value: string): void { this.pais = value; }
     public getEntrenador(): Entrenador { return this.entrenador; }
     public setEntrenador(value: Entrenador): void { this.entrenador = value; }
-    // public getNumeroDePasaporte(): string { return this.numeroDePasaporte; }
-    // public setNumeroDePasaporte(value: string): void { this.numeroDePasaporte = value; }
-    // public getFechaDeNacimiento(): Date { return this.fechaDeNacimiento; }
-    // public setFechaDeNacimiento(value: Date): void { this.fechaDeNacimiento = value; }
+    public getMasajista(): Masajista { return this.masajista; }
+    public setMasajista(value: Masajista): void { this.masajista = value; }
+    public getPlantel(): Futbolista[] { return this.futbolistas; }
     //-------------------------------------------------------------------------
-
-    public incorporarFutbolistas(): void { 
-        this.entrenador.armarEquipo
+    public incorporarFutbolista(jugador: Futbolista): void {
+        this.futbolistas.push(jugador);
     }
-    public incorporarFutbolista(jugador: Futbolista): void { }
-    public darDeAltaFutbolista(jugador: Futbolista): void { }
-    public jugarPartido(): void { }
-    public presentarListaDeJugadores(): void { 
-        this.entrenador.armarEquipo()
+    public eliminarFutbolista(jugador: Futbolista): void { /* implementar*/ }
+    //    public darDeAltaFutbolista(jugador: Futbolista): void { }
+    // public jugarPartidoCon(contrincante: Seleccion): void { }
+    public jugarPartido(): void {
+        console.log("Jugando....");
     }
 }

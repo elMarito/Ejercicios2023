@@ -1,37 +1,34 @@
 import { Persona } from "./persona";
 //-----------------------------------------------------------------------------
 export class Futbolista extends Persona {
-    // private nombre: string;
-    // private apellido: string;
-    // private numeroDePasaporte: string;
-    // private fechaDeNacimiento: Date;
     private titular: boolean;
     private lesionado: boolean;
+    private desempeño: number; // 0-100%
     //-------------------------------------------------------------------------
-    constructor(nombre: string, apellido: string, numeroDePasaporte: string, fechaDeNacimiento?: Date) {
+    constructor(nombre: string, apellido: string, numeroDePasaporte: string
+        , desempeño: number, lesionado: boolean = false, fechaDeNacimiento?: Date) {
         super(nombre, apellido, numeroDePasaporte, fechaDeNacimiento)
         this.titular = false;
-        this.lesionado = false;
-        // this.nombre = nombre;
-        // this.apellido = apellido;
-        // this.numeroDePasaporte = numeroDePasaporte;
-        // this.fechaDeNacimiento = (fechaDeNacimiento === undefined) ? new Date() : fechaDeNacimiento;
+        this.lesionado = lesionado;
+        this.desempeño = desempeño;
     }
     //-------------------------------------------------------------------------
-    // public getNombre(): string { return this.nombre; }
-    // public setNombre(value: string): void { this.nombre = value; }
-    // public getApellido(): string { return this.apellido; }
-    // public setApellido(value: string): void { this.apellido = value; }
-    // public getNumeroDePasaporte(): string { return this.numeroDePasaporte; }
-    // public setNumeroDePasaporte(value: string): void { this.numeroDePasaporte = value; }
-    // public getFechaDeNacimiento(): Date { return this.fechaDeNacimiento; }
-    // public setFechaDeNacimiento(value: Date): void { this.fechaDeNacimiento = value; }
+    public getDesempeño(): number { return this.desempeño }
+    public setDesempeño(desempeño: number): void { this.desempeño = desempeño }
+    public getEdad(): number {
+        return 27; // TODO calcular la edad (investigar date-fns npm package)
+        // return ((new Date()).getDate() - this.getFechaDeNacimiento()); 
+    }
     //-------------------------------------------------------------------------
     public esTitular(): boolean { return this.titular }
+    public titularizar(): void { this.titular = true }
+    public quitarTitularidad(): void { this.titular = false }
+
     public estaLesionado(): boolean { return this.lesionado }
-    public seLesiono(): void { this.lesionado = true; }
-    public seRecupero(): void { this.lesionado = false; }
-    public jugarEnPosicion(posicion: string): void { }
-    public jugar(): void { }
-    public calentar(): void { }
+    // public seLesiono(): void { this.lesionado = true }
+    // public seRecupero(): void { this.lesionado = false }
+    //-------------------------------------------------------------------------
+    public jugarEnPosicion(posicion: string): void { /*implementar*/ }
+    public jugar(): void { /*implementar*/ }
+    public calentar(): void { /*implementar*/ }
 }
