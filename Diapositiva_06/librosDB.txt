@@ -1,5 +1,5 @@
-Autor|Titulo|Tematica|Editorial
-Ray Bradbury|Cronicas marcianas|ciencia ficcion|Futura
-Eduardo Sacheri|La noche de la Usina|suspenso|Alfaguara
-Edgar Allan Poe|Corazon delator|terror|Darkside
-Quino|Mafalda|humor|EDICIONES DE LA FLOR
+ISBN         |Autor          |Titulo              |Tematica       |Editorial
+9788333815100|Ray Bradbury   |Cronicas marcianas  |ciencia ficcion|Futura
+9788333815101|Eduardo Sacheri|La noche de la Usina|suspenso       |Alfaguara
+9788333815102|Edgar Allan Poe|Corazon delator     |terror         |Darkside
+9788333815103|Quino          |Mafalda             |humor          |EDICIONES DE LA FLOR

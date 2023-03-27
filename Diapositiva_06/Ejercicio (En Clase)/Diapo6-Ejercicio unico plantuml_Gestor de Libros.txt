@@ -1,0 +1,37 @@
+@startuml
+
+skin rose
+skinparam classAttributeIconSize 0
+
+title Gestor de Libros - Diagrama de Clase (Diap6 Ejercicio unico)
+
+    GestorLibros o-- Libro
+
+class GestorLibros {
+  - libros: Libro[]
+  + getLibros(): Libro[]
+  + insertar(libro: Libro): void
+  + eliminar(libroISBN: string): void
+  + consultar(libroISBN: string): (Libro | undefined)
+  + modificar(libroISBN: string, libroNuevo: Libro): void
+  + buscar(libroISBN: string): number
+  + insertarLibrosDesdeArchivo(archivo: string)
+}
+
+class Libro {
+    - ISBN: string
+    - titulo: string
+    - autor: string
+    - tematica: string
+    - editorial: string
+    + getISBN(): string
+    + setAutor(autor: string): void
+    + getAutor(): string
+    + setTitulo(titulo: string): void
+    + getTitulo(): string
+    + setTematica(tematica: string): void
+    + getTematica(): string
+    + setEditorial(editorial: string): void
+    + getEditorial(): string
+}
+@enduml
