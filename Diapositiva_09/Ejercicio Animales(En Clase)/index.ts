@@ -3,8 +3,8 @@
 // Hecho en clase el dia 23-03-2023.(En Grupo)
 // ● Nicolas Mansilla
 // ● Nicolas Ignacio Genta
-// ● ? falta completar
-// ● ? falta completar
+// ● Sabrina Reyes
+// ● ? falta completar (creo que habia alguien mas)
 // ● Mario Patronelli
 //=============================================================================
 import { Araña } from "./araña";
