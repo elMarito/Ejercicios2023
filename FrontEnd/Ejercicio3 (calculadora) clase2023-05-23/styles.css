@@ -1,0 +1,89 @@
+* {
+    font-size: larger;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 500px;
+}
+
+.countDown {
+    width: 2rem;
+    height: 5rem;
+    border-style: inset;
+    border-width: 3px;
+    background-color: crimson;
+    padding: 1rem;
+}
+
+#calculator {
+    /* width: 200px; */
+    height: 500px;
+    /* display: grid;
+    grid-auto-flow: row dense;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr; */
+    /* gap: 3px 3px; */
+    /* grid-template-areas:
+        ". . . ."
+        ". . . ."
+        ". . . ."
+        ". . . ."; */
+    justify-content: space-evenly;
+    background-color: darkorchid;
+    border-style: inset;
+    /* border-width: 3px; */
+}
+
+#digits {
+    padding-right: 1rem;
+    border-width: 1rem;
+    width: 100%;
+    text-align: right;
+}
+
+#result {
+    padding-right: 1rem;
+    border-width: 1rem;
+    width: 100%;
+    height: 2rem;
+    border-style: inset;
+    border-width: 3px;
+    text-align: right;
+    /* grid-column: 1 / 4; */
+}
+
+button {
+    width: 24%;
+    height: 20%;
+    /* size: 15rem 15rem;     */
+}
+
+#keys {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+/* #zero {
+    grid-column: 1 / 2;
+} */
+/* Clases ------------------------------------------------------------------ */
+.operation {
+    background-color: aqua;
+}
+
+.number {
+    background-color: coral;
+}
+
+/* Ids    ------------------------------------------------------------------ */
+#equal {
+    background-color: greenyellow;
+}
+
+#clear {
+    background-color: red;
+}

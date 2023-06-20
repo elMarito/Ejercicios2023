@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet">
+    <script src="./index.js" defer type="module"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+    <!-- <script src="sweetalert2.all.min.js"></script> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Ejercicio Crud/Frontend</h1>
+    </header>
+    <table>
+        <button id="add">Add Person</button>
+        <thead>
+            <tr>
+                <th scope="col">Avatar</th>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Created At</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- <th scope="col">Avatar</th>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Created At</th> -->
+        </tbody>
+        <!-- <tfoot>
+            <tr>
+                <td colspan="5">
+                    <button id="prev">&lt;Prev</button>
+                    <span id="current-pag"></span>
+                    <button id="next">next></button>
+                </td>
+            </tr>
+        </tfoot> -->
+    </table>
+    <dialog id="modal">
+        <form action="" method="dialog" id="form">
+            <input type="text" id="id" name="id" hidden>
+            <label for="fullname">Full name
+                <input type="text" id="fullname" name="fullname" required>
+            </label>
+            <label for="email">Email
+                <input type="email" id="email" name="email" required>
+            </label>
+            <label for="avatar">Avatar
+                <input type="text" id="avatar" name="avatar">
+            </label>
+            <input type="submit" value="Acept">
+            <input type="button" value="Delete" id="delete">
+            <input type="button" value="Cancel" id="closeModal">
+        </form>
+    </dialog>    
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+img {
+    height: 50vw;
+}
+
+.countDown {
+    width: 2rem;
+    height: 5rem;
+    border-style: inset;
+    border-width: 3px;
+    background-color:crimson;
+    padding: 1rem;
+}
